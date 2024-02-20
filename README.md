@@ -46,7 +46,7 @@ Once Ollama is installed, you can use it in your Colab notebook as follows:
 
 2. Run the Ollama model of your choice. For example, to use the `mistral` model, execute:
 
-    ```python
+    ```bash
     ! ollama run mistral
     ```
 
