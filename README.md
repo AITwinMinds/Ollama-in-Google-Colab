@@ -92,7 +92,7 @@ This will send the prompt to the Ollama model and print its response.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This content is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Support Us
 
