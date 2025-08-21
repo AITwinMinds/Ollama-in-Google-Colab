@@ -44,22 +44,13 @@ Once Ollama is installed, you can use it in your Colab notebook as follows:
     ollama_thread.start()
     ```
 
-2. Run the Ollama model of your choice. For example, to use the `mistral` model, execute:
+2. Download the Ollama model of your choice. For example, to use the `mistral` model, execute:
 
     ```bash
-    ! ollama run mistral
+    ! ollama pull mistral
     ```
 
-    After seeing this message `Send a message (/? for help)`, stop the execution and proceed to the next step.
-
-3. Now you need to start the Ollama server again by running the following code:
-
-    ```python
-    ollama_thread = threading.Thread(target=ollama)
-    ollama_thread.start()
-    ```
-
-4. Now, you can interact with Ollama by sending prompts and receiving responses. Here's an example:
+3. Now, you can interact with Ollama by sending prompts and receiving responses. Here's an example:
 
     ```python
     prompt = """
@@ -68,7 +59,7 @@ Once Ollama is installed, you can use it in your Colab notebook as follows:
     """
     ```
 
-5. Then, run the following code to receive the response based on your prompt. Here, `stream` is set to `False`, but you can also consider a streaming approach for continuous response printing:
+4. Then, run the following code to receive the response based on your prompt. Here, `stream` is set to `False`, but you can also consider a streaming approach for continuous response printing:
 
     ```python
     url = 'http://localhost:11434/api/chat'
